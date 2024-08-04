@@ -1,0 +1,222 @@
+.sidebar {
+  min-height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: aliceblue;
+  /* padding: 25px 15px; */
+}
+
+.sidebar img {
+  width: 20px;
+}
+.sidebar .menu {
+  display: block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sidebar .new-chat {
+  margin-top: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: #e6eaf1;
+  border-radius: 50px;
+  font-size: 14px;
+  color: gray;
+  cursor: pointer;
+}
+
+.sidebar .recent {
+  display: flex;
+  flex-direction: column;
+  animation: fadein 1.5s;
+}
+
+.sidebar .recent-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar .recent-entry {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  color: #282828;
+  cursor: pointer;
+}
+
+.sidebar .recent-entry:hover {
+  background-color: #e6eaf1;
+}
+
+.sidebar .bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .bottom-item {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .sidebar {
+    padding: 15px 10px;
+  }
+
+  .sidebar img {
+    width: 18px;
+  }
+
+  .sidebar .menu {
+    margin-left: 5px;
+  }
+
+  .sidebar .new-chat {
+    margin-top: 30px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .sidebar .recent-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sidebar .recent-entry {
+    padding: 8px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sidebar {
+    padding: 20px 12px;
+  }
+
+  .sidebar img {
+    width: 19px;
+  }
+
+  .sidebar .menu {
+    margin-left: 8px;
+  }
+
+  .sidebar .new-chat {
+    margin-top: 40px;
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+
+  .sidebar .recent-title {
+    margin-top: 25px;
+    margin-bottom: 18px;
+  }
+
+  .sidebar .recent-entry {
+    padding: 9px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .sidebar {
+    padding: 22px 14px;
+  }
+
+  .sidebar img {
+    width: 20px;
+  }
+
+  .sidebar .menu {
+    margin-left: 10px;
+  }
+
+  .sidebar .new-chat {
+    margin-top: 45px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .sidebar .recent-title {
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar .recent-entry {
+    padding: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .sidebar {
+    padding: 25px 15px;
+  }
+
+  .sidebar img {
+    width: 20px;
+  }
+
+  .sidebar .menu {
+    margin-left: 10px;
+  }
+
+  .sidebar .new-chat {
+    margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar .recent-entry {
+    padding: 10px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .sidebar {
+    padding: 25px 15px;
+  }
+
+  .sidebar img {
+    width: 20px;
+  }
+
+  .sidebar .menu {
+    margin-left: 10px;
+  }
+
+  .sidebar .new-chat {
+    margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar .recent-entry {
+    padding: 10px;
+  }
+}
+
+/* Hide sidebar on small devices (less than 600px) */
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
